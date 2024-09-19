@@ -3,6 +3,7 @@
 ## ENV
 - `HOSTNAME` Server you would like to continuously ping [ default=localhost ]
 - `TIMEOUT` Number of seconds between timeouts [ default=300 ]
+- `ITERATION` Number of ping iteration [ default=1 ]
 
 ## docker-compose.yml
 ```yml
