@@ -1,4 +1,4 @@
 #!/bin/sh
-echo ping ${HOSTNAME:=localhost} every ${TIMEOUT:=300} sec
+echo ping ${HOSTNAME:=localhost} every ${TIMEOUT:=300} sec for ${ITERATIONS:=1} iterations
 
-while true; do ping -c 1 ${HOSTNAME}; sleep ${TIMEOUT}; done;
+while true; do ping -c ${ITERATIONS} ${HOSTNAME}; sleep ${TIMEOUT}; done;
